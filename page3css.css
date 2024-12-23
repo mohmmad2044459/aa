@@ -1,0 +1,85 @@
+
+
+
+
+    .background {
+        background-image: linear-gradient(to bottom right ,#000000 20%, #3F72AF );
+        margin: 0;
+        padding: 0;
+        min-height: 100vh; /* ضمان أن الخلفية تغطي كامل الصفحة */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+
+
+.btn {
+
+   margin-top: 1px;
+   margin-right: 20px;
+
+
+
+}
+#postsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#postsList {
+    display: flex; /* عرض المنشورات في صفوف */
+    flex-wrap: wrap; /* الانتقال إلى الصف التالي إذا لم تكفِ المساحة */
+    justify-content: center; /* توسيط المنشورات */
+    gap: 15px; /* إضافة مسافة بين المنشورات */
+}
+
+
+.filter-btn.active {
+    background-color: #343a40;
+    color: #fff;
+}
+.post-card {
+    height: 275px;
+    max-width: 650px; /* التحكم في العرض */
+    margin: 10px auto; /* وضع مسافة تلقائية لتوسيط المنشورات */
+    border-radius: 10px; /* زوايا مستديرة */
+    overflow: hidden; /* لمنع تجاوز المحتويات */
+}
+
+.post-card img {
+   
+    object-fit: cover; /* لضبط حجم الصورة لتناسب المساحة */
+    padding: 20px;
+}
+
+.post-card .card-body {
+    padding: 15px; /* تقليل المسافات الداخلية */
+    font-size: 20px; /* تقليل حجم النصوص */
+    text-align: center; /* محاذاة النصوص في المنتصف */
+}
+
+.post-card .btn {
+    font-size: 12px; /* تقليل حجم الأزرار */
+    padding: 5px 10px; /* تقليل المسافات داخل الأزرار */
+}
+.heart {
+    top: 10px; /* المسافة من الأعلى */
+    right: 10px; /*المسافة من اليمين*/
+   
+    cursor: pointer; /* عند تمرير الماوس، يظهر أنه قابل للنقر */
+}
+.heart svg {
+    transition: transform 0.2s ease; /* حركة القلب عند التفاعل */
+}
+
+.heart:hover svg {
+    transform: scale(1.2); /* تكبير القلب عند المرور عليه */
+}
+
+.text-right {
+    text-align: right; /* محاذاة النص إلى اليمين */
+    
+}
